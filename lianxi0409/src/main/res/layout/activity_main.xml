@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccenta"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="80dp"
+            android:textColor="@color/colorAccentb"
+            android:text="商"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorAccenta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <RadioButton
+                android:id="@+id/rb01"
+                android:background="@drawable/bj"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_marginLeft="30sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="登录"
+                android:textSize="30sp"
+                android:button="@null"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/rb02"
+                android:background="@drawable/bj"
+                android:layout_marginRight="30sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="注册"
+                android:textSize="30sp"
+                android:button="@null"
+                android:gravity="center"/>
+
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccentb"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorAccenta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="八维集团"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaaaaaaaaaaaaaaaaaa"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
